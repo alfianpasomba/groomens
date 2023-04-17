@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>SportStore | E-Commerce</title>
+    </head>
+
+    <body>
+        <!-- DESAIN HEADER -->
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1><a href="./index.html">Groomens</a></h1>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <!-- <li><a href="/index.html">Home</a></li>
+                        <li><a href="/produk.html">Produk</a></li>
+                        <li><a href="/account.html">Account</a></li> -->
+                        <li><a onclick="bagToogle()" onpointerout="bagInactive()"
+                                class="fa fa-shopping-basket bag-button" width="25px"></a>
+                        </li>
+                        <li> | </li>
+                        <li><a id="masuk" href="./login.html">Masuk</a></li>
+                        <li><a id="daftar" href="./signup.html">Daftar</a></li>
+                    </ul>
+                </nav>
+                <i class="fa fa-bars" id="menu-icon" onclick="menuToogle()"></i>
+            </div>
+        </div>
+
+        <div class="small-container banner-depan">
+            <div class="row">
+                <img class="promo" src="asset/banner/11.11.png">
+            </div>
+        </div>
+
+
+        <!-- DESAIN PRODUK TERBARU -->
+        <div class="small-container">
+            <div class="row">
+                <h2>Kategori Produk</h2>
+            </div>
+            <div class="row kategori">
+                <a href="produk/face-wash-1.html" id="kat-1">Face Foam dan Scrub</a>
+                <a href="produk/deo.html" id="kat-2">Deodoran</a>
+                <a href="produk/pomade.html" id="kat-3">Pomade</a>
+                <a href="produk/page-1.html" id="kat-4">Lihat Semua Produk</a>
+            </div>
+        </div>
+
+        <!-- Flash Sale -->
+        <div class="small-container flash-sale">
+            <div class="row">
+                <div class="head-flash">
+                    <h2>Flashsale</h2>
+                    <h3 class="timer">Test</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <a href="details.html">
+                        <img src="./asset/1.jpg">
+                        <div class="text">
+                            <h4>Men Extra Bright Dark Spot Minimizer Foam</h4>
+                            <p>Rp36.100</p>
+                            <s class="price">Rp38.000</s> <span class="discount">5%</span>
+                            <div class="rating">
+                                <i class="fa fa-star"></i> <span class="rating">5,0</span> <span class="sales">| 100
+                                    Terjual</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-5">
+                    <img src="./asset/2.jpg">
+                    <div class="text">
+                        <h4>Nivea Men Acne Oil Clear Acne Defense Foam</h4>
+                        <p>Rp36.100</p>
+                        <s class="price">Rp38.000</s> <span class="discount">5%</span>
+                        <div class="rating">
+                            <i class="fa fa-star"></i> <span class="rating">5,0</span> <span class="sales">| 100
+                                Terjual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img src="./asset/3.jpg">
+                    <div class="text">
+                        <h4>Nivea Men Deep Bright Oil Clear Mud Foam</h4>
+                        <p>Rp36.100</p>
+                        <s class="price">Rp38.000</s> <span class="discount">5%</span>
+                        <div class="rating">
+                            <i class="fa fa-star"></i> <span class="rating">5,0</span> <span class="sales">| 100
+                                Terjual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img src="./asset/4.jpg">
+                    <div class="text">
+                        <h4>Nivea Men Bright Oil Clear Anti-Shine+Purify M Foam</h4>
+                        <p>Rp36.100</p>
+                        <s class="price">Rp38.000</s> <span class="discount">5%</span>
+                        <div class="rating">
+                            <i class="fa fa-star"></i> <span class="rating">5,0</span> <span class="sales">| 100
+                                Terjual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img src="./asset/5.jpg">
+                    <div class="text">
+                        <h4>Nivea Men Bright Oil Ctrl Pore Minimizing Foam</h4>
+                        <p>Rp36.100</p>
+                        <s class="price">Rp38.000</s> <span class="discount">5%</span>
+                        <div class="rating">
+                            <i class="fa fa-star"></i> <span class="rating">5,0</span> <span class="sales">| 100
+                                Terjual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DESAIN PRODUK ANDALAN -->
+        <div class="small-container">
+            <div class="row">
+                <h2>Paling Laris</h2>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <a href="details.html">
+                        <img src="./asset/1.jpg">
+                        <div class="text">
+                            <h4>Men Extra Bright Dark Spot Minimizer Foam</h4>
+                            <p>Rp36.100</p>
+                            <s class="price">Rp38.000</s> <span class="discount">5%</span>
+                            <div class="rating">
+                                <i class="fa fa-star"></i> <span class="rating">5,0</span> <span class="sales">| 100
+                                    Terjual</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-5">
+                    <img src="./asset/2.jpg">
+                    <div class="text">
+                        <h4>Nivea Men Acne Oil Clear Acne Defense Foam</h4>
+                        <p>Rp36.100</p>
+                        <s class="price">Rp38.000</s> <span class="discount">5%</span>
+                        <div class="rating">
+                            <i class="fa fa-star"></i> <span class="rating">5,0</span> <span class="sales">| 100
+                                Terjual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img src="./asset/3.jpg">
+                    <div class="text">
+                        <h4>Nivea Men Deep Bright Oil Clear Mud Foam</h4>
+                        <p>Rp36.100</p>
+                        <s class="price">Rp38.000</s> <span class="discount">5%</span>
+                        <div class="rating">
+                            <i class="fa fa-star"></i> <span class="rating">5,0</span> <span class="sales">| 100
+                                Terjual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img src="./asset/4.jpg">
+                    <div class="text">
+                        <h4>Nivea Men Bright Oil Clear Anti-Shine+Purify M Foam</h4>
+                        <p>Rp36.100</p>
+                        <s class="price">Rp38.000</s> <span class="discount">5%</span>
+                        <div class="rating">
+                            <i class="fa fa-star"></i> <span class="rating">5,0</span> <span class="sales">| 100
+                                Terjual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img src="./asset/5.jpg">
+                    <div class="text">
+                        <h4>Nivea Men Bright Oil Ctrl Pore Minimizing Foam</h4>
+                        <p>Rp36.100</p>
+                        <s class="price">Rp38.000</s> <span class="discount">5%</span>
+                        <div class="rating">
+                            <i class="fa fa-star"></i> <span class="rating">5,0</span> <span class="sales">| 100
+                                Terjual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <a href="produk/page-1.html" id="kat-4">Lihat Semua Produk</a>
+            </div>
+        </div>
+
+
+        <!-- DESAIN BRANDS -->
+        <div class="small-container">
+            <div class="row">
+                <h2>Daftar Brand</h2>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="Asset/brands/1.jpg">
+                </div>
+                <div class="col-4">
+                    <img src="Asset/brands/2.jpg">
+                </div>
+                <div class="col-4">
+                    <img src="Asset/brands/3.jpg">
+                </div>
+                <div class="col-4">
+                    <img src="Asset/brands/4.jpg">
+                </div>
+                <div class="col-4">
+                    <img src="Asset/brands/5.jpg">
+                </div>
+                <div class="col-4">
+                    <img src="Asset/brands/6.jpg">
+                </div>
+                <div class="col-4">
+                    <img src="Asset/brands/7.jpg">
+                </div>
+                <div class="col-4">
+                    <img src="Asset/brands/8.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- DESAIN FOOTER -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Dukungan</h3>
+                        <div>Pembayaran</div>
+                        <div>Pengiriman</div>
+                        <div>Status Pesanan</div>
+                        <div>Pengembalian Produk</div>
+                        <div>Groomens Rewards</div>
+                        <div>Cara Berbelanja</div>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Groomens</h3>
+                        <div>Tentang Groomens</div>
+                        <div>Blog Groomens</div>
+                        <div>Kabar Terbaru</div>
+                        <div>Karir di Groomens</div>
+                        <div>Ketentuan & Kebijakan Privasi</div>
+                        <div>Hak Kekayaan Intelektual</div>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Kontak</h3>
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <span>085 340 340 513</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-whatsapp"></i>
+                            <span>082 188 438 131</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope-o"></i>
+                            <span>contact@groomens.com</span>
+                        </div>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Download Aplikasi</h3>
+                        <div>
+                            <img src="./Asset/andro.svg" height="30px">
+                            <img src="./Asset/ios.svg" height="30px">
+                        </div>
+                        <div>
+                            <i class="fa fa-facebook-square"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-youtube-play"></i>
+                            <i class="fa fa-telegram"></i>
+                        </div>
+                        <div>Copyright © 2022 PT. Groomens Indonesia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bag -->
+
+        <div class="small-container bag">
+            <h2>Belanja</h2>
+            <hr>
+            <div class="all-product">
+                <div class="product">
+                    <img src="./Asset/1.jpg" height="60px">
+                    <p>Nivea Men Extra Bright Dark Spot Minimizer Foam
+                    </p>
+                    <div>
+                        <p>Rp22.000</p>
+                        <p>Jumlah : 1</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Asset/2.jpg" height="60px">
+                    <p>Nivea Men Acne Oil Clear Acne Defense Foam
+                    </p>
+                    <div>
+                        <p>Rp22.000</p>
+                        <p>Jumlah : 1</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Asset/3.jpg" height="60px">
+                    <p>Nivea Men Deep Bright Oil Clear Mud Foam
+                    </p>
+                    <div>
+                        <p>Rp22.000</p>
+                        <p>Jumlah : 1</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Asset/4.jpg" height="60px">
+                    <p>Nivea Men Bright Oil Clear Anti-Shine+Purify M Foam
+                    </p>
+                    <div>
+                        <p>Rp22.000</p>
+                        <p>Jumlah : 1</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom">
+                <p>Total (2 Produk)</p>
+                <p>Rp300.000</p>
+            </div>
+        </div>
+
+        <!-- JS Timer -->
+        <script>
+            let num = 10000;
+            const timer = document.querySelector(".timer")
+            let timerObj = setInterval(() => {
+                if (num > 0) {
+                    num = num - 1
+                    // console.log(num)
+                    timer.innerText =
+                        `0${Math.floor(num/3600)}:${Math.floor(num/60%60)}:${Math.floor(num%60)<10 ? "0"+Math.floor(num%60) : Math.floor(num%60)} `
+                }
+            }, 1000);
+        </script>
+
+        <!-- JS For Bag -->
+        <script>
+            let bag = document.querySelector(".bag");
+
+            function bagToogle() {
+                if (bag.style.display == "none") {
+                    bag.style.display = "block"
+                } else {
+                    bag.style.display = "none"
+                }
+            }
+
+            function bagInactive() {
+                bag.style.display = "none"
+            }
+        </script>
+
+        <!-- JS For Toogle Menu -->
+        <script>
+            let menuItems = document.getElementById("MenuItems");
+            menuItems.style.maxHeight = "0px";
+
+            function menuToogle() {
+                if (menuItems.style.maxHeight == "0px") {
+                    menuItems.style.maxHeight = "200px"
+                } else {
+                    menuItems.style.maxHeight = "0px"
+                }
+            }
+        </script>
+    </body>
+
+</html>
